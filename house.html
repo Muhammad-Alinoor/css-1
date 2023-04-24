@@ -10,7 +10,11 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            background-color: rgb(91, 158, 91);
         }
 
         h1 {
@@ -23,7 +27,7 @@
             padding: 5%;
             margin: 5% 0% 2% 20%;
             background-color: rgb(221 105 105 / 32%);
-            box-sizing: border-box;
+
         }
 
         #first_block {
@@ -35,7 +39,7 @@
             font-size: 3em;
             margin: 0 10% 5% 40%;
             background-color: coral;
-            box-sizing: border-box;
+
         }
 
         .kitchen {
@@ -49,9 +53,31 @@
         #bed {
             background-color: silver;
             margin: 5% 55% 0 20%;
-            box-sizing: border-box;
+
             height: 300px;
             padding: 10%;
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        #toilet {
+            border: 5px solid yellow;
+            margin: 2% 70% 5% 20%;
+            height: 200px;
+            padding: 6% 3%;
+
+        }
+
+        .kitchen_second {
+            margin-left: 45%;
+            margin-right: 25%;
+            background-color: black;
+            height: 200px;
+            color: white;
+            padding: 12%;
+
             text-transform: capitalize;
             text-align: center;
             font-size: 2em;
@@ -70,8 +96,8 @@
             <p class="kitchen">Kitchen of First Block</p>
             <p id="bed">Bed room</p>
 
-            <p>Toilet</p>
-            <p>Chapra</p>
+            <p id="toilet">Toilet</p>
+            <p class="kitchen_second">Chapra</p>
 
         </div>
     </div>
