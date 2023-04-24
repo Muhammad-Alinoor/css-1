@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Box Model</title>
+    <!-- Style to understand box model -->
+    <style>
+        /* By default style by universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+            /* we can create obstacle to change box sizing using the following property */
+            box-sizing: border-box;
+            /* Now the content will adjust with the box */
+
+        }
+
+        /* box= container */
+        .container {
+            /* content background */
+            background-color: aquamarine;
+            /* content border */
+            border: 2px solid gray;
+            /* in box model, padding is applied to create space between border and content */
+            padding: 50px;
+            /* In box model, margin is applied to create space outside the border.*/
+            margin: 20px;
+            /* let's give width to the container */
+            width: 200px;
+            /* So, the size of a box is changed due to change of padding, margin and border. Because the box-size of content = total amount of padding, margin and border */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is heading.</h1>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil delectus molestias illum odio
+            laboriosam omnis ipsa deserunt sint, magni, ratione magnam expedita, veniam praesentium cum facilis
+            voluptatum perferendis incidunt ullam.</p>
+    </div>
+    <div class="container">
+        <h1>This is heading.</h1>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil delectus molestias illum odio
+            laboriosam omnis ipsa deserunt sint, magni, ratione magnam expedita, veniam praesentium cum facilis
+            voluptatum perferendis incidunt ullam.</p>
+    </div>
+    <div class="container">
+        <h1>This is heading.</h1>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil delectus molestias illum odio
+            laboriosam omnis ipsa deserunt sint, magni, ratione magnam expedita, veniam praesentium cum facilis
+            voluptatum perferendis incidunt ullam.</p>
+    </div>
+    <div class="container">
+        <h1>This is heading.</h1>
+        <p id="fourth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil delectus molestias illum odio
+            laboriosam omnis ipsa deserunt sint, magni, ratione magnam expedita, veniam praesentium cum facilis
+            voluptatum perferendis incidunt ullam.</p>
+    </div>
+    <div class="container">
+        <h1>This is heading.</h1>
+        <p id="fifth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil delectus molestias illum odio
+            laboriosam omnis ipsa deserunt sint, magni, ratione magnam expedita, veniam praesentium cum facilis
+            voluptatum perferendis incidunt ullam.</p>
+    </div>
+</body>
+
+</html>
